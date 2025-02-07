@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/theme-provider"
+
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { Toaster } from "react-hot-toast"
@@ -17,17 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        {children}
-        <Toaster />
-        </ThemeProvider>
-      </body>
+     <body className={inter.className}>
+  {children}
+  <Toaster />
+</body>
+
     </html>
   )
 }

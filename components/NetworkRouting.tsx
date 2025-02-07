@@ -130,6 +130,8 @@ export default function NetworkRouting() {
   }, [route, animationStep])
 
   return (
+    <div className="p-4 md:p-8"> {/* Added padding here */}
+
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <Card>
         <CardHeader>
@@ -249,5 +251,7 @@ export default function NetworkRouting() {
         </Card>
       )}
     </div>
+    </div>
+
   )
 }
